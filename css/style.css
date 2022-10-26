@@ -1,0 +1,63 @@
+body{
+    display:flex;
+    justify-content:center;
+  }
+  
+  nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:purple;
+    width:50%;
+    height:100px;
+  }
+  
+  ul{
+    padding:0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    list-style:none;
+    background-color:grey;
+    width:300px;
+    height:50px;
+  }
+  
+  li a{
+    text-decoration:none;
+    color:white;
+  }
+  
+  li a:hover{
+    color:violet;
+    text-decoration:underline;
+  }
+  
+  /* media queries inherit the styling from the original css. Any changes are additive  */
+  @media screen and (max-width:720px){
+    nav{
+      width:90%;
+      height:1000px;
+    }
+    ul{
+      flex-direction:column;
+      width:80%;
+      height:85%;
+    }
+    li{
+      width:100%;
+      height:300px;
+      display:flex;
+      border-bottom:1px solid white;
+      justify-content:center;
+      align-items:center;
+    }
+    
+    ul li:nth-child(3){
+      border-bottom:none;
+    }
+    
+    li a{
+      font-size:26px;
+    }
+  }
